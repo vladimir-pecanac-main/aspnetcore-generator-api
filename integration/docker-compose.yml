@@ -2,13 +2,9 @@ version: '3.1'
 
 services:
   generator:
-    image: my-registry:55000/gen:ci-8
-    ports:
-      - "8080:80"
+    image: my-registry:55000/gen:ci-10
   mail:
     image: mailhog/mailhog
-    ports:
-      - "8025:8025"
   integration:
-    image: my-registry:55000/gen:integration-10
+    image: my-registry:55000/gen:integration-11
     build: .
