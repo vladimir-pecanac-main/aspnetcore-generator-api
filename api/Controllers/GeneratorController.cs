@@ -37,7 +37,7 @@ namespace api.Controllers
                 await mailClient.DisconnectAsync(true);
             }
         }
-        
+
         [HttpGet]
         public IEnumerable<string> Names(Range range)
             => range.Of(Name.FullName);
